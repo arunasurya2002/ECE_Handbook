@@ -50,12 +50,6 @@ a{text-decoration:none;
    font-size:20px; 
    color:white;}   
 </style>
-
-<script>
-function openPDF(file) {
-    document.getElementById("pdfFrame").src = file;
-}
-</script>
     
 </head>
 
@@ -78,10 +72,15 @@ function openPDF(file) {
     
  <center><h1>ECE Pocket Dictionary</h1></center>
 <ul>
-<li><a href="#" onclick="openPDF('https://arunasurya2002.github.io/ECE_Handbook/analog_digital_electronics.pdf')">Analog_Digital Electronics</a></li>
-<li><a href="#" utton onclick="openPDF('https://arunasurya2002.github.io/ECE_Handbook/control_systems_terms.pdf')">Control Systems</a></li>
+<li><a href="#" target="_self" onclick="openPDF('https://arunasurya2002.github.io/ECE_Handbook/analog_digital_electronics.pdf')">Analog_Digital Electronics</a></li>
+<li><a href="#" onclick="openPDF('https://arunasurya2002.github.io/ECE_Handbook/control_systems_terms.pdf')">Control Systems</a></li>
 </ul>
 <iframe id="pdfFrame" width="600" height="500"></iframe>
+    
+<script>
+function openPDF(file) {
+    document.getElementById("pdfFrame").src = file;}
+</script>
 
 
            
