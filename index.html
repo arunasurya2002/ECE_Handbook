@@ -19,12 +19,11 @@ input{background:#00aaff;
      border-radius:5px;}
 
 #dis{display:none;
-     background:#ffb6c1;
+     background:#99ccff;
      position:absolute;
      margin-top:60px;
      width:27%;
-     height:400px;
-     color:maroon;}
+     height:400px;}
     
 #menu{width:96%; 
     height:100%;}
@@ -45,6 +44,7 @@ iframe{width:98%;
 li{margin-left:0px; 
    margin-bottom:10px}
 li:hover{font-weight:bold;}
+li.a{color:navy;}
     
 a{text-decoration:none; 
    font-size:20px; 
@@ -54,8 +54,8 @@ a{text-decoration:none;
 </head>
 
 <div id="menu">
-    <div style="border:none">
-        <input type="button" value="Menu" onClick="dis.style.display='block';"></input>
+    <div style="border:none; position:absolute;">
+        <input type="button" value="Menu" onClick="dis.style.display='block';" size="6"></input>
     </div> 
     <div id="dis" style="display:none;">
         <b>ECE Pocket Dictionary</b>&nbsp;
