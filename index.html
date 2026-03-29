@@ -13,17 +13,6 @@ div{display:block;
     border:1px solid black; 
     margin:0px; 
     padding:5px;} 
-
-input{background:#00aaff;
-     color:white;
-     border-radius:5px;}
-
-#dis{display:none;
-     background:#99ccff;
-     position:absolute;
-     margin-top:60px;
-     width:27%;
-     height:400px;}
     
 #menu{width:96%; 
     height:100%;}
@@ -31,52 +20,43 @@ input{background:#00aaff;
 iframe{width:98%; 
     height:800px;}
     
-#btn{width:96%; 
-    height:40px;
+#btn{width:49%; 
+    height:30px;
     inline-disply:block; 
     background:#00aaff; 
     border:1px solid Blue; 
-    border-radius:15px; 
-    margin:4px; 
+    border-radius:10px; 
+    margin:2px; 
     text-align:center; 
-    padding:10px;}
+    padding:5px;}
 
-li{margin-left:0px; 
-   margin-bottom:10px}
-li a{color:navy; font-size:16px;}
-li a:hover{font-weight:bold;}
-    
 a{text-decoration:none; 
    font-size:20px; 
    color:white;}   
+a:hover{font-weight:bold;}
+    
 </style>
 
 </head>
 
 <div id="menu">
-    <div style="border:none; position:absolute;">
-        <input type="button" value="Menu" onClick="dis.style.display='block';" size="6"></input>
-    </div> 
-    <div id="dis" style="display:none;">
-        <b>ECE Pocket Dictionary</b>&nbsp;
-        <input type="button" value="X" onClick="dis.style.display='none';"></input>
-        <ul>
-            <li><a href="devices.png" target="pdfFrame">Electronic Devices Circuits</a></li>
-            <li><a href="analog.png" target="pdfFrame">Analog Electronics</a></li> 
-            <li><a href="digital.png" target="pdfFrame">Digital Electronics</a></li>
-            <li><a href="control.png" target="pdfFrame">Control Systems</a></li>
-            <li><a href="microcontroller.png" target="pdfFrame">Microcontrollers</a></li>
-            <li><a href="communication.png" target="pdfFrame">Communication Systems</a></li>
-            <li><a href="signals.png" target="pdfFrame">Signals Systems</a></li>
-            <li><a href="network.png" target="pdfFrame">Network Analysis</a></li>
-            <li><a href="magnetic.png" target="pdfFrame">Magnetic Field Theory</a></li>
-            <li><a href="microprocessor.png" target="pdfFrame">Microprocessor</a></li>
-            </ul>
-    </div>
     
 <center><h1>ECE Pocket Dictionary</h1></center>
 
 <iframe name="pdfFrame" width="98%" height="700"></iframe>     
+    
+    <div>
+            <div id="btn"><a href="devices.png" target="pdfFrame">Electronic Devices Circuits</a></div>
+            <div id="btn"><a href="analog.png" target="pdfFrame">Analog Electronics</a></div> 
+            <div id="btn"><a href="digital.png" target="pdfFrame">Digital Electronics</a></div>
+            <div id="btn"><a href="control.png" target="pdfFrame">Control Systems</a></div>
+            <div id="btn"><a href="microcontroller.png" target="pdfFrame">Microcontrollers</a></div>
+            <div id="btn"><a href="communication.png" target="pdfFrame">Communication Systems</a></div>
+            <div id="btn"><a href="signals.png" target="pdfFrame">Signals Systems</a></div>
+            <div id="btn"><a href="network.png" target="pdfFrame">Network Analysis</a></div>
+            <div id="btn"><a href="magnetic.png" target="pdfFrame">Magnetic Field Theory</a></div>
+            <div id="btn"><a href="microprocessor.png" target="pdfFrame">Microprocessor</a></div>
+    </div>
     
 </div>
 </html>
