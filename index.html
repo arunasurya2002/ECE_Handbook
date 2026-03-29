@@ -13,12 +13,17 @@ div{display:block;
     border:1px solid black; 
     margin:0px; 
     padding:5px;} 
+
+#dis{position:absolute;
+     z-index:0px;
+     width:20%;
+     height:300px;}
     
 #menu{width:96%; 
     height:100%;}
 
-iframe{width:96%; 
-    height:450px;}
+iframe{width:98%; 
+    height:800px;}
     
 #btn{width:96%; 
     height:40px;
@@ -38,7 +43,20 @@ a{text-decoration:none;
 </head>
 
 <div id="menu">
-    <center><h1>ECE Pocket Dictionary</h1></center>
+    <div>
+        <button type="button" onclick="dis.style.display='block';">Menu</button>
+        <div id="dis" style="disply:none;">
+            <ul>
+                <li>Analog_Digital Electronics</li>
+                <li>Control Systems terms</li>
+                <li>Microcontrollers terms</li>
+                <li>Network Analysis terms</li>
+                <li>Signals Systems terms</li>
+                <li>ECE four topics</li> 
+            </ul>
+        </div>
+    </div>
+ <center><h1>ECE Pocket Dictionary</h1></center>
            
             <iframe src="https://docs.google.com/gview?url=https://arunasurya2002.github.io/ECE_Handbook/analog_digital_electronics.pdf&embedded=true">
             </iframe>
