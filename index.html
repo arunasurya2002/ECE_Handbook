@@ -19,7 +19,7 @@ div{display:block;
 
 iframe{width:98%; 
     height:780px;
-    transform: scale (1.5);
+    transform:scale (1.5);
     transform-origin: 0 0;}
     
 #btn{width:47%; 
@@ -44,9 +44,10 @@ a:hover{font-weight:bold;}
 
 <div id="menu">
     
-<center><h1>ECE Pocket Dictionary</h1></center>
+<center><h1>ECE Pocket Dictionary</h1></center> 
+    <input type="button" value="+" onclick="zoom.style.transform='scale(1.5)'"></input>
 
-<iframe src="content.html" name="pdfFrame" width="98%" height="700"></iframe>     
+<iframe id="zoom" src="content.html" name="pdfFrame" width="98%" height="700"></iframe>     
     
     <div>
             <div id="btn"><a href="ece10.html" target="pdfFrame">Electronic Devices Circuits</a></div>
@@ -60,6 +61,7 @@ a:hover{font-weight:bold;}
             <div id="btn"><a href="ece6.html" target="pdfFrame">Magnetic Field Theory</a></div>
             <div id="btn"><a href="ece8.html" target="pdfFrame">Microprocessor</a></div>
     </div>
+    
     
 </div>
 </html>
