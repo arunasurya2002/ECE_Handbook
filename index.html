@@ -11,16 +11,22 @@
 div{display:block; 
     float:left; 
     border:1px solid black; 
-    margin:0px; 
-    padding:5px;} 
+    margin:0px;} 
     
-#menu{width:96%; 
+#main{width:99%; 
     height:100%;}
+    
+#dis{width:99%; 
+    height:70%;
+    overflow:auto;}
 
 iframe{width:98%; 
     height:780px;
     transform:scale (1.5);
     transform-origin: 0 0;}
+    
+#menu{width:99%; 
+    height:25%}
     
 #btn{width:47%; 
     height:30px;
@@ -30,26 +36,31 @@ iframe{width:98%;
     border-radius:10px; 
     margin:2px; 
     text-align:center; 
-    padding:5px;}
+    padding:0px;}
 #btn:hover{background:#0080ff;}
 
 a{text-decoration:none; 
-   font-size:18px; 
-   color:white;}   
+    font-size:18px; 
+    color:white; 
+    width:47%; 
+    height:30px;
+    disply:block;
+    line-height:30px;}   
 a:hover{font-weight:bold;}
     
 </style>
 
 </head>
 
-<div id="menu">
+<div id="main">
     
 <center><h1>ECE Pocket Dictionary</h1></center> 
-    
 
-<iframe id="" src="content.html" name="pdfFrame" width="98%" height="700"></iframe>     
+    <div id="dis"> 
+   <iframe src="content.html" name="pdfFrame" width="100%" height="700"></iframe>    
+    </div>
     
-    <div>
+    <div id="menu">
             <div id="btn"><a href="ece10.html" target="pdfFrame">Electronic Devices Circuits</a></div>
             <div id="btn"><a href="ece1.html" target="pdfFrame">Analog Electronics</a></div> 
             <div id="btn"><a href="ece2.html" target="pdfFrame">Digital Electronics</a></div>
